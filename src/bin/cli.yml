@@ -1,0 +1,26 @@
+name: kvs
+version: "0.1.0"
+author: Sam S
+about: Simple Key Value Store
+subcommands:
+    - get:
+        about: Get a given key from the store
+        args:
+            - key:
+                help: A string key
+                required: true
+    - rm:
+        about: Remove a given key from the store
+        args:
+            - key:
+                help: A string key
+                required: true
+    - set:
+        about: Set a given key in the store
+        args:
+            - key:
+                help: A string key
+                required: true
+            - value:
+                help: A string value
+                required: true
